@@ -1,0 +1,7 @@
+vim.cmd([[ set encoding=utf8 ]])
+vim.cmd([[ set rnu ]])
+vim.cmd([[ set nu ]])
+vim.cmd([[ set shiftwidth=2 ]])
+vim.cmd([[ set softtabstop=2 ]])
+vim.cmd([[ set expandtab ]])
+vim.cmd([[ syntax on ]])

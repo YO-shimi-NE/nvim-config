@@ -14,4 +14,5 @@ return require('packer').startup(function()
   use 'nvim-treesitter/nvim-treesitter'
   use 'kyazdani42/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
+  use 'kyazdani42/nvim-tree.lua'
 end)

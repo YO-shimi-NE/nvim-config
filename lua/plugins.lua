@@ -12,4 +12,5 @@ return require('packer').startup(function()
   use 'onsails/lspkind-nvim'
   use 'ibhagwan/fzf-lua'
   use 'nvim-treesitter/nvim-treesitter'
+  use 'kyazdani42/nvim-web-devicons'
 end)

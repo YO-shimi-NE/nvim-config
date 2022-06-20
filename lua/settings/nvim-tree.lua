@@ -15,3 +15,7 @@ require("nvim-tree").setup({
     dotfiles = true,
   },
 })
+
+vim.api.nvim_set_keymap('n', ' t',
+    "<cmd>:NvimTreeToggle<CR>",
+    { noremap = true, silent = true })

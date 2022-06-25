@@ -15,4 +15,5 @@ return require('packer').startup(function()
   use 'kyazdani42/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
   use 'kyazdani42/nvim-tree.lua'
+  use 'folke/tokyonight.nvim'
 end)

@@ -1,3 +1,5 @@
+local default_colors = require("kanagawa.colors").setup()
+
 require('kanagawa').setup({
     undercurl = true,           -- enable undercurls
     commentStyle = { italic = true },
@@ -12,7 +14,9 @@ require('kanagawa').setup({
     dimInactive = false,        -- dim inactive window `:h hl-NormalNC`
     globalStatus = false,       -- adjust window separators highlight for laststatus=3
     colors = {},
-    overrides = {},
+    overrides = {
+      LineNr = { fg = default_colors.lightBlue }
+    },
 })
 
 -- setup must be called before loading

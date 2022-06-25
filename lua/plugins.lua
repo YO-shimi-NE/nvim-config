@@ -16,4 +16,5 @@ return require('packer').startup(function()
   use 'nvim-lualine/lualine.nvim'
   use 'kyazdani42/nvim-tree.lua'
   use 'folke/tokyonight.nvim'
+  use 'rebelot/kanagawa.nvim'
 end)

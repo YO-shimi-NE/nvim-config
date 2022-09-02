@@ -21,7 +21,11 @@ cmp.setup({
     { name = 'path' },
     { name = 'nvim_lua' },
   },
-
+  snippet = {
+    expand = function(args)
+      require('luasnip').lsp_expand(args.body)
+    end,
+  },
   formatting = {
     format = function(entry, vim_item)
       vim_item.kind = lspkind.presets.default[vim_item.kind]
@@ -31,7 +35,6 @@ cmp.setup({
   },
 
   mapping = {
-
     ['<C-n>'] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
     ['<C-p>'] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
     ['<Down>'] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select }),

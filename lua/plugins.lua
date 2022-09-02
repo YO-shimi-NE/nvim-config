@@ -8,6 +8,8 @@ return require('packer').startup(function()
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
+  use 'L3MON4D3/LuaSnip'
+  use 'saadparwaiz1/cmp_luasnip'
   use 'ray-x/lsp_signature.nvim'
   use 'onsails/lspkind-nvim'
   use 'ibhagwan/fzf-lua'
@@ -15,6 +17,5 @@ return require('packer').startup(function()
   use 'kyazdani42/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
   use 'kyazdani42/nvim-tree.lua'
-  use 'folke/tokyonight.nvim'
   use 'rebelot/kanagawa.nvim'
 end)
